@@ -31,6 +31,7 @@ const mutations = {
 }
 
 export default {
+  // { ...object } is a object spread operator
   state: { ...initialState },
   getters,
   mutations
