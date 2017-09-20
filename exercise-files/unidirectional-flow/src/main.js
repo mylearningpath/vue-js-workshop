@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 
+import store from './vuex/store'
 import VueRouter from 'vue-router'
 
 import ProductCatalog from './components/ProductCatalog'
@@ -26,6 +27,7 @@ const router = new VueRouter({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   render: h => h(App)
 })
